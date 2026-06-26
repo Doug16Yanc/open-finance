@@ -1,0 +1,395 @@
+[1mApache Maven 3.8.7[m
+Maven home: /usr/share/maven
+Java version: 21.0.11, vendor: Ubuntu, runtime: /usr/lib/jvm/java-21-openjdk-amd64
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "6.17.0-35-generic", arch: "amd64", family: "unix"
+[[1;36mDEBUG[m] Created new class realm maven.api
+[[1;36mDEBUG[m] Importing foreign packages into class realm maven.api
+[[1;36mDEBUG[m]   Imported: javax.annotation.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.annotation.security.* < plexus.core
+[[1;36mDEBUG[m]   Imported: javax.inject.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.classrealm < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.cli < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.exception < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.execution.scope < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.model < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.monitor < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.plugin < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.profiles < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.project < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.reporting < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.rtinfo < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.settings < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.toolchain < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.usability < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.events < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.observers < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.apache.maven.wagon.resource < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.component < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.configuration < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.container < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.context < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.logging < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.personality < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[[1;36mDEBUG[m]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.artifact < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.collection < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.deployment < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.graph < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.installation < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.metadata < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.repository < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.resolution < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.spi < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.transfer < plexus.core
+[[1;36mDEBUG[m]   Imported: org.eclipse.aether.version < plexus.core
+[[1;36mDEBUG[m]   Imported: org.fusesource.jansi.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.event.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.helpers.* < plexus.core
+[[1;36mDEBUG[m]   Imported: org.slf4j.spi.* < plexus.core
+[[1;36mDEBUG[m] Populating class realm maven.api
+[[1;34mINFO[m] Error stacktraces are turned on.
+[[1;36mDEBUG[m] Message scheme: color
+[[1;36mDEBUG[m] Message styles: [1;36mdebug[m [1;34minfo[m [1;33mwarning[m [1;31merror[m [1;32msuccess[m [1;31mfailure[m [1mstrong[m [32mmojo[m [36mproject[m
+[[1;36mDEBUG[m] Reading global settings from /usr/share/maven/conf/settings.xml
+[[1;36mDEBUG[m] Reading user settings from /home/douglas/.m2/settings.xml
+[[1;36mDEBUG[m] Reading global toolchains from /usr/share/maven/conf/toolchains.xml
+[[1;36mDEBUG[m] Reading user toolchains from /home/douglas/.m2/toolchains.xml
+[[1;36mDEBUG[m] Using local repository at /home/douglas/.m2/repository
+[[1;36mDEBUG[m] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/douglas/.m2/repository
+[[1;34mINFO[m] Scanning for projects...
+[[1;36mDEBUG[m] Using mirror maven-default-http-blocker (http://0.0.0.0/) for apache.snapshots (http://repository.apache.org/snapshots).
+[[1;36mDEBUG[m] Dependency collection stats {ConflictMarker.analyzeTime=2842330, ConflictMarker.markTime=812534, ConflictMarker.nodeCount=1077, ConflictIdSorter.graphTime=1984191, ConflictIdSorter.topsortTime=713358, ConflictIdSorter.conflictIdCount=150, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=14076650, ConflictResolver.conflictItemCount=336, DefaultDependencyCollector.collectTime=680655013, DefaultDependencyCollector.transformTime=22859400}
+[[1;36mDEBUG[m] io.quarkus.platform:quarkus-maven-plugin:jar:3.17.0
+[[1;36mDEBUG[m]    io.quarkus:quarkus-bootstrap-core:jar:3.17.0:compile
+[[1;36mDEBUG[m]       io.quarkus:quarkus-classloader-commons:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-bootstrap-app-model:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]          org.jboss.logging:commons-logging-jboss-logging:jar:1.0.0.Final:runtime (version managed from default)
+[[1;36mDEBUG[m]       io.smallrye.common:smallrye-common-io:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]    io.quarkus:quarkus-bootstrap-maven-resolver:jar:3.17.0:compile
+[[1;36mDEBUG[m]       io.smallrye.beanbag:smallrye-beanbag-maven:jar:1.5.2:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]          io.smallrye.beanbag:smallrye-beanbag-sisu:jar:1.5.2:compile
+[[1;36mDEBUG[m]             io.smallrye.beanbag:smallrye-beanbag:jar:1.5.2:compile
+[[1;36mDEBUG[m]          io.smallrye.common:smallrye-common-constraint:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]          commons-codec:commons-codec:jar:1.17.1:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apache.httpcomponents:httpclient:jar:4.5.14:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]          org.apache.httpcomponents:httpcore:jar:4.4.16:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apache.maven:maven-artifact:jar:3.9.9:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apache.maven:maven-builder-support:jar:3.9.9:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apache.maven:maven-model:jar:3.9.9:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apache.maven:maven-model-builder:jar:3.9.9:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]          org.apache.maven:maven-repository-metadata:jar:3.9.9:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apache.maven:maven-settings:jar:3.9.9:compile (version managed from default)
+[[1;36mDEBUG[m]          org.codehaus.plexus:plexus-interpolation:jar:1.26:compile (version managed from default)
+[[1;36mDEBUG[m]          org.codehaus.plexus:plexus-xml:jar:4.0.1:compile
+[[1;36mDEBUG[m]             org.apache.maven:maven-xml-impl:jar:4.0.0-alpha-5:compile
+[[1;36mDEBUG[m]                org.apache.maven:maven-api-xml:jar:4.0.0-alpha-5:compile
+[[1;36mDEBUG[m]                   org.apache.maven:maven-api-meta:jar:4.0.0-alpha-5:compile
+[[1;36mDEBUG[m]          org.codehaus.plexus:plexus-cipher:jar:2.0:compile (version managed from default)
+[[1;36mDEBUG[m]          org.codehaus.plexus:plexus-sec-dispatcher:jar:2.0:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-fs-util:jar:0.0.10:compile (version managed from default)
+[[1;36mDEBUG[m]       org.jboss.logmanager:jboss-logmanager:jar:3.0.6.Final:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]          io.smallrye.common:smallrye-common-cpu:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]          io.smallrye.common:smallrye-common-expression:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]             io.smallrye.common:smallrye-common-function:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]          io.smallrye.common:smallrye-common-net:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]          io.smallrye.common:smallrye-common-ref:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]       org.jboss.logging:jboss-logging:jar:3.6.1.Final:compile (version managed from default)
+[[1;36mDEBUG[m]       org.slf4j:slf4j-api:jar:2.0.6:compile (version managed from default)
+[[1;36mDEBUG[m]       org.apache.maven:maven-embedder:jar:3.9.9:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]          org.apache.maven.shared:maven-shared-utils:jar:3.4.2:compile (version managed from default)
+[[1;36mDEBUG[m]          com.google.inject:guice:jar:5.1.0:compile
+[[1;36mDEBUG[m]             aopalliance:aopalliance:jar:1.0:compile
+[[1;36mDEBUG[m]          com.google.guava:guava:jar:33.3.1-jre:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]          com.google.guava:failureaccess:jar:1.0.1:compile (version managed from default)
+[[1;36mDEBUG[m]          javax.annotation:javax.annotation-api:jar:1.3.2:compile (version managed from default)
+[[1;36mDEBUG[m]          org.codehaus.plexus:plexus-classworlds:jar:2.6.0:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]          commons-cli:commons-cli:jar:1.8.0:compile
+[[1;36mDEBUG[m]       org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.9.0.M3:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]       org.apache.maven:maven-settings-builder:jar:3.9.9:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]       org.apache.maven:maven-resolver-provider:jar:3.9.9:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]    io.quarkus:quarkus-core-deployment:jar:3.17.0:compile
+[[1;36mDEBUG[m]       org.aesh:readline:jar:2.6:compile (version managed from default)
+[[1;36mDEBUG[m]          org.fusesource.jansi:jansi:jar:2.4.0:compile (version managed from default)
+[[1;36mDEBUG[m]       org.aesh:aesh:jar:2.8.2:compile (version managed from default)
+[[1;36mDEBUG[m]       org.apache.commons:commons-lang3:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]       org.wildfly.common:wildfly-common:jar:1.7.0.Final:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus.gizmo:gizmo:jar:1.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]          org.ow2.asm:asm-util:jar:9.7.1:compile (version managed from default)
+[[1;36mDEBUG[m]             org.ow2.asm:asm-analysis:jar:9.7.1:compile (version managed from default)
+[[1;36mDEBUG[m]       io.smallrye:jandex:jar:3.2.3:compile (version managed from default)
+[[1;36mDEBUG[m]       org.ow2.asm:asm:jar:9.7.1:compile (version managed from default)
+[[1;36mDEBUG[m]       org.ow2.asm:asm-commons:jar:9.7.1:compile (version managed from default)
+[[1;36mDEBUG[m]          org.ow2.asm:asm-tree:jar:9.7.1:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-development-mode-spi:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-hibernate-validator-spi:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-class-change-agent:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-devtools-utilities:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]       org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.9.0.M3:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-core:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]          jakarta.annotation:jakarta.annotation-api:jar:3.0.0:compile (version managed from default)
+[[1;36mDEBUG[m]          jakarta.inject:jakarta.inject-api:jar:2.0.1:compile (version managed from default)
+[[1;36mDEBUG[m]          io.smallrye.config:smallrye-config:jar:3.10.1:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]             io.smallrye.config:smallrye-config-core:jar:3.10.1:compile (version managed from default)
+[[1;36mDEBUG[m]                org.eclipse.microprofile.config:microprofile-config-api:jar:3.1:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]                io.smallrye.common:smallrye-common-classloader:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]                io.smallrye.config:smallrye-config-common:jar:3.10.1:compile (version managed from default)
+[[1;36mDEBUG[m]          org.jboss.logging:jboss-logging-annotations:jar:3.0.2.Final:compile (version managed from default)
+[[1;36mDEBUG[m]          org.jboss.threads:jboss-threads:jar:3.8.0.Final:compile (version managed from default)
+[[1;36mDEBUG[m]             io.smallrye.common:smallrye-common-annotation:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]          io.quarkus:quarkus-bootstrap-runner:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]             io.github.crac:org-crac:jar:0.1.3:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-builder:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]       org.graalvm.sdk:nativeimage:jar:23.1.2:compile (version managed from default)
+[[1;36mDEBUG[m]          org.graalvm.sdk:word:jar:23.1.2:compile
+[[1;36mDEBUG[m]       org.junit.platform:junit-platform-launcher:jar:1.10.5:compile (version managed from default)
+[[1;36mDEBUG[m]          org.junit.platform:junit-platform-engine:jar:1.10.5:compile (version managed from default)
+[[1;36mDEBUG[m]             org.opentest4j:opentest4j:jar:1.3.0:compile
+[[1;36mDEBUG[m]             org.junit.platform:junit-platform-commons:jar:1.10.5:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apiguardian:apiguardian-api:jar:1.1.2:compile
+[[1;36mDEBUG[m]       org.junit.jupiter:junit-jupiter:jar:5.10.5:compile (version managed from default)
+[[1;36mDEBUG[m]          org.junit.jupiter:junit-jupiter-api:jar:5.10.5:compile (version managed from default)
+[[1;36mDEBUG[m]          org.junit.jupiter:junit-jupiter-params:jar:5.10.5:compile (version managed from default)
+[[1;36mDEBUG[m]          org.junit.jupiter:junit-jupiter-engine:jar:5.10.5:runtime (version managed from default)
+[[1;36mDEBUG[m]    io.quarkus:quarkus-project-core-extension-codestarts:jar:3.17.0:compile
+[[1;36mDEBUG[m]    io.quarkus:quarkus-devtools-common:jar:3.17.0:compile
+[[1;36mDEBUG[m]       io.quarkus:quarkus-devtools-registry-client:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-devtools-base-codestarts:jar:3.17.0:compile
+[[1;36mDEBUG[m]       io.quarkus:quarkus-devtools-codestarts:jar:3.17.0:compile
+[[1;36mDEBUG[m]          io.quarkus.qute:qute-core:jar:3.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]             io.smallrye.reactive:mutiny:jar:2.6.2:compile (version managed from default)
+[[1;36mDEBUG[m]                org.jctools:jctools-core:jar:4.0.5:compile (version managed from default)
+[[1;36mDEBUG[m]          commons-io:commons-io:jar:2.17.0:compile (version managed from default)
+[[1;36mDEBUG[m]       org.apache.commons:commons-compress:jar:1.27.1:compile (version managed from default)
+[[1;36mDEBUG[m]       io.smallrye.common:smallrye-common-version:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]       io.smallrye.common:smallrye-common-os:jar:2.8.0:compile (version managed from default)
+[[1;36mDEBUG[m]       io.fabric8:maven-model-helper:jar:37:compile
+[[1;36mDEBUG[m]          org.jdom:jdom2:jar:2.0.6.1:compile
+[[1;36mDEBUG[m]       com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.1:compile (version managed from default)
+[[1;36mDEBUG[m]          org.yaml:snakeyaml:jar:2.3:compile (version managed from default)
+[[1;36mDEBUG[m]       com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.18.1:compile (version managed from default)
+[[1;36mDEBUG[m]       org.apache.maven:maven-plugin-api:jar:3.9.9:compile (version managed from default)
+[[1;36mDEBUG[m]       org.apache.maven:maven-core:jar:3.9.9:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]          org.apache.maven.resolver:maven-resolver-impl:jar:1.9.22:compile (version managed from default)
+[[1;36mDEBUG[m]             org.apache.maven.resolver:maven-resolver-named-locks:jar:1.9.22:compile
+[[1;36mDEBUG[m]          org.apache.maven.resolver:maven-resolver-api:jar:1.9.22:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apache.maven.resolver:maven-resolver-spi:jar:1.9.22:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apache.maven.resolver:maven-resolver-util:jar:1.9.22:compile (version managed from default)
+[[1;36mDEBUG[m]          org.codehaus.plexus:plexus-component-annotations:jar:2.1.0:compile (version managed from default)
+[[1;36mDEBUG[m]       jakarta.enterprise:jakarta.enterprise.cdi-api:jar:4.1.0:compile (version managed from default)
+[[1;36mDEBUG[m]          jakarta.enterprise:jakarta.enterprise.lang-model:jar:4.1.0:compile
+[[1;36mDEBUG[m]          jakarta.el:jakarta.el-api:jar:5.0.1:compile (version managed from default)
+[[1;36mDEBUG[m]          jakarta.interceptor:jakarta.interceptor-api:jar:2.2.0:compile (version managed from default) (exclusions managed from default)
+[[1;36mDEBUG[m]       org.codejive:java-properties:jar:0.0.7:compile
+[[1;36mDEBUG[m]    io.quarkus:quarkus-analytics-common:jar:3.17.0:compile
+[[1;36mDEBUG[m]       com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.1:compile (version managed from default)
+[[1;36mDEBUG[m]       io.quarkus:quarkus-devtools-message-writer:jar:3.17.0:compile
+[[1;36mDEBUG[m]    io.quarkus:quarkus-cyclonedx-generator:jar:3.17.0:compile
+[[1;36mDEBUG[m]       org.cyclonedx:cyclonedx-core-java:jar:9.0.5:compile (version managed from default)
+[[1;36mDEBUG[m]          org.apache.commons:commons-collections4:jar:4.4:compile
+[[1;36mDEBUG[m]          com.github.package-url:packageurl-java:jar:1.5.0:compile
+[[1;36mDEBUG[m]          com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.18.1:compile (version managed from default)
+[[1;36mDEBUG[m]             org.codehaus.woodstox:stax2-api:jar:4.2.2:compile
+[[1;36mDEBUG[m]             com.fasterxml.woodstox:woodstox-core:jar:7.0.0:compile
+[[1;36mDEBUG[m]          com.networknt:json-schema-validator:jar:1.5.1:compile
+[[1;36mDEBUG[m]             com.ethlo.time:itu:jar:1.10.2:compile
+[[1;36mDEBUG[m]    javax.inject:javax.inject:jar:1:compile
+[[1;36mDEBUG[m]    org.freemarker:freemarker:jar:2.3.33:compile
+[[1;36mDEBUG[m]    org.eclipse.parsson:parsson:jar:1.1.7:compile
+[[1;36mDEBUG[m]       jakarta.json:jakarta.json-api:jar:2.1.3:compile (version managed from default)
+[[1;36mDEBUG[m]    com.fasterxml.jackson.core:jackson-databind:jar:2.18.1:compile
+[[1;36mDEBUG[m]       com.fasterxml.jackson.core:jackson-annotations:jar:2.18.1:compile (version managed from default)
+[[1;36mDEBUG[m]       com.fasterxml.jackson.core:jackson-core:jar:2.18.1:compile (version managed from default)
+[[1;36mDEBUG[m]    org.twdata.maven:mojo-executor:jar:2.4.0:compile
+[[1;36mDEBUG[m]       org.codehaus.plexus:plexus-utils:jar:3.5.1:compile (version managed from default)
+[[1;36mDEBUG[m]    org.jboss.slf4j:slf4j-jboss-logmanager:jar:2.0.0.Final:compile
+[[1;36mDEBUG[m] Created new class realm extension>io.quarkus.platform:quarkus-maven-plugin:3.17.0
+[[1;36mDEBUG[m] Importing foreign packages into class realm extension>io.quarkus.platform:quarkus-maven-plugin:3.17.0
+[[1;36mDEBUG[m]   Imported:  < maven.api
+[[1;36mDEBUG[m] Populating class realm extension>io.quarkus.platform:quarkus-maven-plugin:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus.platform:quarkus-maven-plugin:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-bootstrap-core:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-classloader-commons:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-bootstrap-app-model:jar:3.17.0
+[[1;36mDEBUG[m]   Included: org.jboss.logging:commons-logging-jboss-logging:jar:1.0.0.Final
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-io:jar:2.8.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-bootstrap-maven-resolver:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.smallrye.beanbag:smallrye-beanbag-maven:jar:1.5.2
+[[1;36mDEBUG[m]   Included: io.smallrye.beanbag:smallrye-beanbag-sisu:jar:1.5.2
+[[1;36mDEBUG[m]   Included: io.smallrye.beanbag:smallrye-beanbag:jar:1.5.2
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-constraint:jar:2.8.0
+[[1;36mDEBUG[m]   Included: commons-codec:commons-codec:jar:1.17.1
+[[1;36mDEBUG[m]   Included: org.apache.httpcomponents:httpclient:jar:4.5.14
+[[1;36mDEBUG[m]   Included: org.apache.httpcomponents:httpcore:jar:4.4.16
+[[1;36mDEBUG[m]   Included: org.apache.maven:maven-builder-support:jar:3.9.9
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.26
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-xml:jar:4.0.1
+[[1;36mDEBUG[m]   Included: org.apache.maven:maven-xml-impl:jar:4.0.0-alpha-5
+[[1;36mDEBUG[m]   Included: org.apache.maven:maven-api-xml:jar:4.0.0-alpha-5
+[[1;36mDEBUG[m]   Included: org.apache.maven:maven-api-meta:jar:4.0.0-alpha-5
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-cipher:jar:2.0
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-sec-dispatcher:jar:2.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-fs-util:jar:0.0.10
+[[1;36mDEBUG[m]   Included: org.jboss.logmanager:jboss-logmanager:jar:3.0.6.Final
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-cpu:jar:2.8.0
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-expression:jar:2.8.0
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-function:jar:2.8.0
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-net:jar:2.8.0
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-ref:jar:2.8.0
+[[1;36mDEBUG[m]   Included: org.jboss.logging:jboss-logging:jar:3.6.1.Final
+[[1;36mDEBUG[m]   Included: org.apache.maven:maven-embedder:jar:3.9.9
+[[1;36mDEBUG[m]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.4.2
+[[1;36mDEBUG[m]   Included: com.google.inject:guice:jar:5.1.0
+[[1;36mDEBUG[m]   Included: aopalliance:aopalliance:jar:1.0
+[[1;36mDEBUG[m]   Included: com.google.guava:guava:jar:33.3.1-jre
+[[1;36mDEBUG[m]   Included: com.google.guava:failureaccess:jar:1.0.1
+[[1;36mDEBUG[m]   Included: commons-cli:commons-cli:jar:1.8.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-core-deployment:jar:3.17.0
+[[1;36mDEBUG[m]   Included: org.aesh:readline:jar:2.6
+[[1;36mDEBUG[m]   Included: org.aesh:aesh:jar:2.8.2
+[[1;36mDEBUG[m]   Included: org.apache.commons:commons-lang3:jar:3.17.0
+[[1;36mDEBUG[m]   Included: org.wildfly.common:wildfly-common:jar:1.7.0.Final
+[[1;36mDEBUG[m]   Included: io.quarkus.gizmo:gizmo:jar:1.8.0
+[[1;36mDEBUG[m]   Included: org.ow2.asm:asm-util:jar:9.7.1
+[[1;36mDEBUG[m]   Included: org.ow2.asm:asm-analysis:jar:9.7.1
+[[1;36mDEBUG[m]   Included: io.smallrye:jandex:jar:3.2.3
+[[1;36mDEBUG[m]   Included: org.ow2.asm:asm:jar:9.7.1
+[[1;36mDEBUG[m]   Included: org.ow2.asm:asm-commons:jar:9.7.1
+[[1;36mDEBUG[m]   Included: org.ow2.asm:asm-tree:jar:9.7.1
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-development-mode-spi:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-hibernate-validator-spi:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-class-change-agent:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-devtools-utilities:jar:3.17.0
+[[1;36mDEBUG[m]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.9.0.M3
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-core:jar:3.17.0
+[[1;36mDEBUG[m]   Included: jakarta.annotation:jakarta.annotation-api:jar:3.0.0
+[[1;36mDEBUG[m]   Included: jakarta.inject:jakarta.inject-api:jar:2.0.1
+[[1;36mDEBUG[m]   Included: io.smallrye.config:smallrye-config:jar:3.10.1
+[[1;36mDEBUG[m]   Included: io.smallrye.config:smallrye-config-core:jar:3.10.1
+[[1;36mDEBUG[m]   Included: org.eclipse.microprofile.config:microprofile-config-api:jar:3.1
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-classloader:jar:2.8.0
+[[1;36mDEBUG[m]   Included: io.smallrye.config:smallrye-config-common:jar:3.10.1
+[[1;36mDEBUG[m]   Included: org.jboss.logging:jboss-logging-annotations:jar:3.0.2.Final
+[[1;36mDEBUG[m]   Included: org.jboss.threads:jboss-threads:jar:3.8.0.Final
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-annotation:jar:2.8.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-bootstrap-runner:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.github.crac:org-crac:jar:0.1.3
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-builder:jar:3.17.0
+[[1;36mDEBUG[m]   Included: org.graalvm.sdk:nativeimage:jar:23.1.2
+[[1;36mDEBUG[m]   Included: org.graalvm.sdk:word:jar:23.1.2
+[[1;36mDEBUG[m]   Included: org.junit.platform:junit-platform-launcher:jar:1.10.5
+[[1;36mDEBUG[m]   Included: org.junit.platform:junit-platform-engine:jar:1.10.5
+[[1;36mDEBUG[m]   Included: org.opentest4j:opentest4j:jar:1.3.0
+[[1;36mDEBUG[m]   Included: org.junit.platform:junit-platform-commons:jar:1.10.5
+[[1;36mDEBUG[m]   Included: org.apiguardian:apiguardian-api:jar:1.1.2
+[[1;36mDEBUG[m]   Included: org.junit.jupiter:junit-jupiter:jar:5.10.5
+[[1;36mDEBUG[m]   Included: org.junit.jupiter:junit-jupiter-api:jar:5.10.5
+[[1;36mDEBUG[m]   Included: org.junit.jupiter:junit-jupiter-params:jar:5.10.5
+[[1;36mDEBUG[m]   Included: org.junit.jupiter:junit-jupiter-engine:jar:5.10.5
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-project-core-extension-codestarts:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-devtools-common:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-devtools-registry-client:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-devtools-base-codestarts:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-devtools-codestarts:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus.qute:qute-core:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.smallrye.reactive:mutiny:jar:2.6.2
+[[1;36mDEBUG[m]   Included: org.jctools:jctools-core:jar:4.0.5
+[[1;36mDEBUG[m]   Included: commons-io:commons-io:jar:2.17.0
+[[1;36mDEBUG[m]   Included: org.apache.commons:commons-compress:jar:1.27.1
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-version:jar:2.8.0
+[[1;36mDEBUG[m]   Included: io.smallrye.common:smallrye-common-os:jar:2.8.0
+[[1;36mDEBUG[m]   Included: io.fabric8:maven-model-helper:jar:37
+[[1;36mDEBUG[m]   Included: org.jdom:jdom2:jar:2.0.6.1
+[[1;36mDEBUG[m]   Included: com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:jar:2.18.1
+[[1;36mDEBUG[m]   Included: org.yaml:snakeyaml:jar:2.3
+[[1;36mDEBUG[m]   Included: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.18.1
+[[1;36mDEBUG[m]   Included: org.apache.maven.resolver:maven-resolver-named-locks:jar:1.9.22
+[[1;36mDEBUG[m]   Included: org.apache.maven.resolver:maven-resolver-util:jar:1.9.22
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-component-annotations:jar:2.1.0
+[[1;36mDEBUG[m]   Included: jakarta.enterprise:jakarta.enterprise.cdi-api:jar:4.1.0
+[[1;36mDEBUG[m]   Included: jakarta.enterprise:jakarta.enterprise.lang-model:jar:4.1.0
+[[1;36mDEBUG[m]   Included: jakarta.el:jakarta.el-api:jar:5.0.1
+[[1;36mDEBUG[m]   Included: jakarta.interceptor:jakarta.interceptor-api:jar:2.2.0
+[[1;36mDEBUG[m]   Included: org.codejive:java-properties:jar:0.0.7
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-analytics-common:jar:3.17.0
+[[1;36mDEBUG[m]   Included: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.1
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-devtools-message-writer:jar:3.17.0
+[[1;36mDEBUG[m]   Included: io.quarkus:quarkus-cyclonedx-generator:jar:3.17.0
+[[1;36mDEBUG[m]   Included: org.cyclonedx:cyclonedx-core-java:jar:9.0.5
+[[1;36mDEBUG[m]   Included: org.apache.commons:commons-collections4:jar:4.4
+[[1;36mDEBUG[m]   Included: com.github.package-url:packageurl-java:jar:1.5.0
+[[1;36mDEBUG[m]   Included: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:jar:2.18.1
+[[1;36mDEBUG[m]   Included: org.codehaus.woodstox:stax2-api:jar:4.2.2
+[[1;36mDEBUG[m]   Included: com.fasterxml.woodstox:woodstox-core:jar:7.0.0
+[[1;36mDEBUG[m]   Included: com.networknt:json-schema-validator:jar:1.5.1
+[[1;36mDEBUG[m]   Included: com.ethlo.time:itu:jar:1.10.2
+[[1;36mDEBUG[m]   Included: org.freemarker:freemarker:jar:2.3.33
+[[1;36mDEBUG[m]   Included: org.eclipse.parsson:parsson:jar:1.1.7
+[[1;36mDEBUG[m]   Included: jakarta.json:jakarta.json-api:jar:2.1.3
+[[1;36mDEBUG[m]   Included: com.fasterxml.jackson.core:jackson-databind:jar:2.18.1
+[[1;36mDEBUG[m]   Included: com.fasterxml.jackson.core:jackson-annotations:jar:2.18.1
+[[1;36mDEBUG[m]   Included: com.fasterxml.jackson.core:jackson-core:jar:2.18.1
+[[1;36mDEBUG[m]   Included: org.twdata.maven:mojo-executor:jar:2.4.0
+[[1;36mDEBUG[m]   Included: org.codehaus.plexus:plexus-utils:jar:3.5.1
+[[1;36mDEBUG[m]   Included: org.jboss.slf4j:slf4j-jboss-logmanager:jar:2.0.0.Final
+[[1;36mDEBUG[m] Extension realms for project br.com.ofb:consent-open-finance:jar:1.0.0-SNAPSHOT: [ClassRealm[extension>io.quarkus.platform:quarkus-maven-plugin:3.17.0, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@639fee48]]
+[[1;36mDEBUG[m] Created new class realm project>br.com.ofb:consent-open-finance:1.0.0-SNAPSHOT
+[[1;36mDEBUG[m] Populating class realm project>br.com.ofb:consent-open-finance:1.0.0-SNAPSHOT
+[[1;36mDEBUG[m] Looking up lifecycle mappings for packaging jar from ClassRealm[project>br.com.ofb:consent-open-finance:1.0.0-SNAPSHOT, parent: ClassRealm[maven.api, parent: null]]
+[[1;31mERROR[m] [ERROR] Some problems were encountered while processing the POMs:
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 105, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 116, column 21
+[ERROR] 'dependencies.dependency.version' for io.quarkus:quarkus-smallrye-reactive-messaging-kafka:jar is missing. @ line 52, column 21
+ @ 
+[[1;31mERROR[m] The build could not read 1 project -> [1m[Help 1][m
+[1;31morg.apache.maven.project.ProjectBuildingException[m: [1;31mSome problems were encountered while processing the POMs:
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 105, column 21
+[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-surefire-plugin is missing. @ line 116, column 21
+[ERROR] 'dependencies.dependency.version' for io.quarkus:quarkus-smallrye-reactive-messaging-kafka:jar is missing. @ line 52, column 21
+[m
+    [1mat[m org.apache.maven.project.DefaultProjectBuilder.build ([1mDefaultProjectBuilder.java:397[m)
+    [1mat[m org.apache.maven.graph.DefaultGraphBuilder.collectProjects ([1mDefaultGraphBuilder.java:414[m)
+    [1mat[m org.apache.maven.graph.DefaultGraphBuilder.getProjectsForMavenReactor ([1mDefaultGraphBuilder.java:405[m)
+    [1mat[m org.apache.maven.graph.DefaultGraphBuilder.build ([1mDefaultGraphBuilder.java:82[m)
+    [1mat[m org.apache.maven.DefaultMaven.buildGraph ([1mDefaultMaven.java:542[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:219[m)
+    [1mat[m org.apache.maven.DefaultMaven.doExecute ([1mDefaultMaven.java:192[m)
+    [1mat[m org.apache.maven.DefaultMaven.execute ([1mDefaultMaven.java:105[m)
+    [1mat[m org.apache.maven.cli.MavenCli.execute ([1mMavenCli.java:960[m)
+    [1mat[m org.apache.maven.cli.MavenCli.doMain ([1mMavenCli.java:293[m)
+    [1mat[m org.apache.maven.cli.MavenCli.main ([1mMavenCli.java:196[m)
+    [1mat[m jdk.internal.reflect.DirectMethodHandleAccessor.invoke ([1mDirectMethodHandleAccessor.java:103[m)
+    [1mat[m java.lang.reflect.Method.invoke ([1mMethod.java:580[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced ([1mLauncher.java:283[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.launch ([1mLauncher.java:226[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode ([1mLauncher.java:407[m)
+    [1mat[m org.codehaus.plexus.classworlds.launcher.Launcher.main ([1mLauncher.java:348[m)
+[[1;31mERROR[m]   
+[[1;31mERROR[m]   The project br.com.ofb:consent-open-finance:1.0.0-SNAPSHOT (/home/douglas/Downloads/consent-open-finance/pom.xml) has 1 error
+[[1;31mERROR[m]     'dependencies.dependency.version' for io.quarkus:quarkus-smallrye-reactive-messaging-kafka:jar is missing. @ line 52, column 21
+[[1;31mERROR[m] 
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/ProjectBuildingException
