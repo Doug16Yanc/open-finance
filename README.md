@@ -1,62 +1,236 @@
-# consent-open-finance
+# 🏦 consent-open-finance
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+A robust **Open Finance** backend service built with Java 21 and Quarkus, designed to manage financial consents in a secure, event-driven, and cloud-native architecture.
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+---
 
-## Running the application in dev mode
+## 📋 Table of Contents
 
-You can run your application in dev mode that enables live coding using:
+- [Overview](#overview)
+- [Tech Stack](#tech-stack)
+- [Architecture](#architecture)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Running the Application](#running-the-application)
+- [Build & Package](#build--package)
+- [Native Executable](#native-executable)
+- [Testing](#testing)
+- [Observability](#observability)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
 
-```shell script
+---
+
+## Overview
+
+`consent-open-finance` is a microservice that implements the consent management layer of an Open Finance platform. It exposes RESTful endpoints for creating, querying, and revoking financial data-sharing consents, while publishing domain events to Kafka topics for downstream consumers.
+
+The service follows modern cloud-native principles: reactive where it counts, observable by default, and deployable as a native binary via GraalVM.
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Language | Java 21 (preview features enabled) |
+| Framework | Quarkus 3.27.0 |
+| Persistence | PostgreSQL + Hibernate ORM Panache |
+| Migrations | Flyway |
+| Messaging | Apache Kafka (SmallRye Messaging) |
+| Serialization | Jackson (REST) |
+| Validation | Hibernate Validator |
+| Security | SmallRye JWT |
+| Observability | Micrometer + Prometheus, OpenTelemetry, SmallRye Health |
+| Testing | JUnit 5, REST Assured |
+| Build | Maven Wrapper (mvnw) |
+
+---
+
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        REST Clients                         │
+└─────────────────────────┬───────────────────────────────────┘
+                          │ HTTP / JWT
+                          ▼
+┌─────────────────────────────────────────────────────────────┐
+│              Quarkus REST (JAX-RS + Jackson)                │
+│                 Hibernate Validator                          │
+├─────────────────────────────────────────────────────────────┤
+│              Service / Domain Layer                          │
+├───────────────────────────┬─────────────────────────────────┤
+│  Hibernate ORM Panache    │   SmallRye Messaging (Kafka)    │
+│  Flyway Migrations        │   Event producers / consumers   │
+├───────────────────────────┼─────────────────────────────────┤
+│       PostgreSQL          │         Apache Kafka            │
+└───────────────────────────┴─────────────────────────────────┘
+                Micrometer · OpenTelemetry · Health
+```
+
+---
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- **Java 21** ([Eclipse Temurin](https://adoptium.net/) or [GraalVM CE 21](https://www.graalvm.org/) for native builds)
+- **Maven 3.9+** (or use the included `./mvnw` wrapper — no installation needed)
+- **Docker & Docker Compose** (for local PostgreSQL and Kafka via Quarkus Dev Services)
+
+> Quarkus Dev Services automatically spins up PostgreSQL and Kafka containers in dev/test mode — no manual setup required.
+
+---
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/Doug16Yanc/open-finance.git
+cd open-finance
+```
+
+---
+
+## Running the Application
+
+### Development mode (with live reload)
+
+```bash
 ./mvnw quarkus:dev
 ```
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+The application starts at `http://localhost:8080`.  
+The **Quarkus Dev UI** is available at `http://localhost:8080/q/dev/` — inspect extensions, health, Kafka topics, and more directly from the browser.
 
-## Packaging and running the application
+### Environment variables
 
-The application can be packaged using:
+Key configuration properties (set in `application.properties` or as environment variables):
 
-```shell script
+| Property | Description | Default |
+|---|---|---|
+| `quarkus.datasource.jdbc.url` | PostgreSQL JDBC URL | Dev Services auto-configured |
+| `quarkus.datasource.username` | DB username | Dev Services auto-configured |
+| `quarkus.datasource.password` | DB password | Dev Services auto-configured |
+| `kafka.bootstrap.servers` | Kafka broker address | Dev Services auto-configured |
+| `mp.jwt.verify.publickey.location` | JWT public key location | — |
+| `mp.jwt.verify.issuer` | Expected JWT issuer | — |
+
+---
+
+## Build & Package
+
+### Standard JAR
+
+```bash
 ./mvnw package
 ```
 
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+Produces `target/quarkus-app/quarkus-run.jar`. Run it with:
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+```bash
+java -jar target/quarkus-app/quarkus-run.jar
+```
 
-If you want to build an _über-jar_, execute the following command:
+> Dependencies are placed under `target/quarkus-app/lib/`. Keep the whole directory together when deploying.
 
-```shell script
+### Über-JAR (fat JAR)
+
+```bash
 ./mvnw package -Dquarkus.package.jar.type=uber-jar
 ```
 
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
+Run with:
 
-## Creating a native executable
+```bash
+java -jar target/*-runner.jar
+```
 
-You can create a native executable using:
+---
 
-```shell script
+## Native Executable
+
+Build a native binary for minimal memory footprint and near-instant startup:
+
+```bash
+# Requires GraalVM with native-image
 ./mvnw package -Dnative
 ```
 
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
+Or build inside a container (no local GraalVM needed):
 
-```shell script
+```bash
 ./mvnw package -Dnative -Dquarkus.native.container-build=true
 ```
 
-You can then execute your native executable with: `./target/consent-open-finance-1.0-SNAPSHOT-runner`
+Run the native binary:
 
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
+```bash
+./target/consent-open-finance-1.0-SNAPSHOT-runner
+```
 
-## Provided Code
+> See the [Quarkus native guide](https://quarkus.io/guides/maven-tooling) for more details.
 
-### REST
+---
 
-Easily start your REST Web Services
+## Testing
 
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+```bash
+./mvnw test
+```
+
+Tests use **JUnit 5** and **REST Assured**. Quarkus Dev Services automatically provides isolated PostgreSQL and Kafka instances during test execution.
+
+---
+
+## Observability
+
+| Endpoint | Description |
+|---|---|
+| `GET /q/health` | Overall health (liveness + readiness) |
+| `GET /q/health/live` | Liveness check |
+| `GET /q/health/ready` | Readiness check |
+| `GET /q/metrics` | Prometheus metrics (Micrometer) |
+
+Distributed tracing is exported via **OpenTelemetry** — configure the OTLP exporter endpoint with `quarkus.otel.exporter.otlp.endpoint`.
+
+---
+
+## Project Structure
+
+```
+open-finance/
+├── src/
+│   ├── main/
+│   │   ├── java/br/com/ofb/          # Application source code
+│   │   └── resources/
+│   │       ├── application.properties # Quarkus configuration
+│   │       └── db/migration/          # Flyway SQL migrations
+│   └── test/
+│       └── java/br/com/ofb/          # Unit & integration tests
+├── .mvn/wrapper/                      # Maven wrapper files
+├── mvnw / mvnw.cmd                    # Maven wrapper scripts
+├── pom.xml                            # Project dependencies & build config
+└── .dockerignore
+```
+
+---
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feat/my-feature`
+3. Commit your changes following [Conventional Commits](https://www.conventionalcommits.org/)
+4. Push and open a Pull Request
+
+---
+
+## Resources
+
+- [Quarkus Documentation](https://quarkus.io/guides/)
+- [SmallRye Messaging (Kafka)](https://quarkus.io/guides/kafka)
+- [Hibernate ORM Panache](https://quarkus.io/guides/hibernate-orm-panache)
+- [SmallRye JWT](https://quarkus.io/guides/security-jwt)
+- [Flyway with Quarkus](https://quarkus.io/guides/flyway)
+- [Open Finance Brasil](https://openfinancebrasil.org.br/)
