@@ -1,7 +1,7 @@
 package tech.dto;
 
-import tech.domain.Consent;
-import tech.domain.ConsentStatus;
+import tech.domain.entity.Consent;
+import tech.domain.enums.ConsentStatus;
 
 import java.time.OffsetDateTime;
 import java.util.List;

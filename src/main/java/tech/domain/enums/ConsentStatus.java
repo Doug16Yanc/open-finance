@@ -1,4 +1,4 @@
-package tech.domain;
+package tech.domain.enums;
 
 public enum ConsentStatus {
     AWAITING_AUTHORISATION,

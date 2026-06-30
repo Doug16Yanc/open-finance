@@ -1,4 +1,4 @@
-package tech.domain;
+package tech.domain.entity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 import jakarta.persistence.*;
@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import org.hibernate.annotations.JdbcTypeCode;
 import org.hibernate.type.SqlTypes;
+import tech.domain.enums.ConsentStatus;
 
 import java.time.OffsetDateTime;
 import java.util.List;
