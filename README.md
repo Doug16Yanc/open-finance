@@ -207,7 +207,7 @@ Distributed tracing is exported via **OpenTelemetry** — configure the OTLP exp
 open-finance/
 ├── src/
 │   ├── main/
-│   │   ├── java/br/com/ofb/          # Application source code
+│   │   ├── java/tech/          # Application source code
 │   │   └── resources/
 │   │       ├── application.properties # Quarkus configuration
 │   │       └── db/migration/          # Flyway SQL migrations
