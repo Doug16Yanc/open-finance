@@ -4,6 +4,10 @@ A robust **Open Finance** backend service built with Java 21 and Quarkus, design
 
 ---
 
+## Diagram 
+
+<img width="1672" height="941" alt="Image" src="https://github.com/user-attachments/assets/84afcd10-50eb-4029-ac72-05cf2170412f" />
+
 ## 📋 Table of Contents
 
 - [Overview](#overview)
