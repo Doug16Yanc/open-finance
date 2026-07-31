@@ -1,4 +1,4 @@
-# 🏦 consent-open-finance
+# 🏦 Consent Open Finance
 
 A robust **Open Finance** backend service built with Java 21 and Quarkus, designed to manage financial consents in a secure, event-driven, and cloud-native architecture.
 
